@@ -1,0 +1,116 @@
+:root {
+    --bs-body-font-family: "Montserrat", sans-serif;
+    --brand-ivory: #FEFFF1;
+    --brand-sage: #59132E;
+    --brand-gold: #415543;
+    --brand-charcoal: #59132E;
+}
+body {
+    background: var(--brand-ivory);
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar-brand {
+    align-content: center !important;
+}
+.nav-link {
+    color: var(--brand-charcoal) !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.search-btn {
+    border: 2px solid var(--brand-charcoal);
+    border-radius: 9999px;
+    padding: 0.25rem 1.25rem;
+    background: transparent;
+    font-size: 0.75rem;
+    line-height: 1;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    background: url("https://via.placeholder.com/1600x600?text=Hero+Image")
+    center/cover no-repeat;
+    min-height: 420px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.hero-overlay {
+    backdrop-filter: brightness(0.35);
+    padding: 4rem 1rem;
+    width: 100%;
+}
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+.hero p {
+    max-width: 540px;
+    margin-inline: auto;
+    font-size: 0.95rem;
+}
+.btn-ghost {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 0.6rem 2.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+/* ---------- SECTION TITLE ---------- */
+.section-heading {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    letter-spacing: 1px;
+}
+.section-sub {
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+    color: var(--brand-charcoal);
+}
+
+/* ---------- CAROUSEL ---------- */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+.carousel-item img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* ---------- CTA BUTTON ---------- */
+.btn-primary-brand {
+    background: var(--brand-charcoal);
+    border: none;
+    padding: 0.75rem 3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: var(--brand-charcoal);
+    color: #fff;
+    padding: 2.5rem 0 3rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    text-transform: uppercase;
+}
