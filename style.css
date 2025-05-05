@@ -1,79 +1,282 @@
 :root {
-    --bs-body-font-family: "Montserrat", sans-serif;
+    --bs-body-font-family: "Poppins Medium";
     --brand-ivory: #FEFFF1;
     --brand-sage: #59132E;
     --brand-gold: #415543;
     --brand-charcoal: #59132E;
-}
-body {
-    background: var(--brand-ivory);
+    --nav-height: 2rem;
 }
 
-/* ---------- NAVBAR ---------- */
+body {
+    background: var(--brand-ivory);
+    padding-top: var(--nav-height);
+}
+
+/*-- FONTS --*/
+
+@font-face {
+    font-family: 'Poppins Medium';
+    font-style: medium;
+    src:local('Poppins Medium'), local('Poppins-Medium'),
+    url('/Fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    src:local('Poppins Regular'), local('Poppins-Regular'),
+    url('/Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins Italic';
+    font-style: italic;
+    src:local('Poppins Italic'), local('Poppins-Italic'),
+    url('/Fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nave Bold';
+    font-style: bold;
+    src:local('Nave Bold'), local('nave-bold'),
+    url('/Fonts/nave-font-family/nave-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nave Medium';
+    font-style: medium;
+    src:local('Nave Medium'), local('nave-medium'),
+    url('/Fonts/nave-font-family/nave-medium.ttf') format('truetype');
+}
+
+/*-- END FONTS --*/ 
+
+
+/*-- NAVBAR -- */
+.navbar{
+    top: 3%;
+    
+}
+
 .navbar-brand {
-    align-content: center !important;
+    position: absolute;        
+    left: 50%;                   
+    transform: translateX(-50%); 
+    margin-left: 0;
+    align-items: center; 
+    
 }
 .nav-link {
     color: var(--brand-charcoal) !important;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 0.75rem;
-}
-.search-btn {
-    border: 2px solid var(--brand-charcoal);
-    border-radius: 9999px;
-    padding: 0.25rem 1.25rem;
-    background: transparent;
-    font-size: 0.75rem;
-    line-height: 1;
+    font-size: 1rem;
 }
 
-/* ---------- HERO ---------- */
+#mainNav {
+    background: #FEFFF1;           
+    transition: top, padding .3s ease, background-color .3s ease, box-shadow .3s;
+    position: sticky;          
+    top: 3%;
+}
+
+#mainNav .brand-logo {
+    height: 56px;                 
+    transition: height .3s ease;
+}
+
+#mainNav.navbar--shrink {
+    padding-block: 0.5rem;         
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    top: 0;
+    padding-top: 0.25 !important; 
+    padding-bottom: .25rem;  
+}
+
+#mainNav.navbar--shrink .brand-logo {
+    height: 28px;                
+}
+
+#mainNav.navbar--shrink .brand {
+    width: 50px;
+    height: 50px;   
+}
+
+/*-- END NAVBAR --*/
+
+/*-- HERO --*/
 .hero {
-    background: url("https://via.placeholder.com/1600x600?text=Hero+Image")
-    center/cover no-repeat;
-    min-height: 420px;
     position: relative;
-    display: flex;
+    background: url("/Images/Flowers/flowers.jpg")
+    center/cover no-repeat; 
+    display: flex;  
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #FEFFF1;
+    overflow: hidden; 
+    margin-top: var(--nav-height);
 }
+
 .hero-overlay {
-    backdrop-filter: brightness(0.35);
-    padding: 4rem 1rem;
-    width: 100%;
+    position: relative;                                 
+    z-index: 2;
+    max-width: 700px;
+    padding: 5rem 1rem;
 }
+
+.hero::before {                                       
+    content: "";
+    position: absolute;
+    inset: 0;                                           
+    background: rgba(0,0,0,.05);                        
+    z-index: 1;                                       
+}
+
 .hero h1 {
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
+    font-family: "Nave Bold";
+    font-size: 81px;
     text-transform: uppercase;
-    font-size: clamp(2rem, 5vw, 3.5rem);
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
+    color: #FEFFF1;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
 }
 .hero p {
     max-width: 540px;
     margin-inline: auto;
     font-size: 0.95rem;
+    color: #FEFFF1;
+    text-shadow: 0 0 10px #00000073;
 }
 .btn-ghost {
-    border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
-    padding: 0.6rem 2.5rem;
+    border: 2px solid #FEFFF1;
     font-weight: 600;
     margin-top: 1.5rem;
+    
 }
 
-/* ---------- SECTION TITLE ---------- */
-.section-heading {
-    font-family: "Playfair Display", serif;
+/*-- END HERO --*/
+
+/*-- BUTTONS --*/
+
+/*!! figure out how to have shadow on only normal button, NOT hover !!*/
+.btn-outline-light {
+    border-radius: 3rem;                 
+    padding: 0.8rem 3rem;       
+    --bs-btn-color:            #FEFFF1;  
+    --bs-btn-border-color:     #FEFFF1;  
+    --bs-btn-bg:               transparent;
+    --bs-btn-hover-bg:         #FEFFF1;  
+    --bs-btn-hover-border-color:#FEFFF1;
+    --bs-btn-hover-color:      #59132E; 
+}
+
+.btn-primary-brand {
+    border-radius: 3rem;                 
+    padding: 0.8rem 3rem;       
+    --bs-btn-color:            #FEFFF1;  
+    --bs-btn-border-color:     #59132E;  
+    --bs-btn-bg:               #59132e;
+    --bs-btn-hover-bg:         #7C4D55;  
+    --bs-btn-hover-border-color:#7C4D55;
+    --bs-btn-hover-color:      #FEFFF1; 
+}
+
+/*-- END BUTTONS --*/
+
+/*-- BANNER --*/
+.promo-banner {
+    width: 100%;
+    background: #415543;           
+    color: #FEFFF1;                
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1;          
+    overflow: hidden;             
+    padding-block: 0.6rem;       
+}
+
+/*-- MOVING TRACK --*/
+.promo-track {
+    display: flex;
+    white-space: max-content;          
+    animation: scroll-left 25s linear infinite;
+}
+
+.promo-msg{
+    white-space: nowrap;
+    padding-inline: 1rem;
+}
+
+.promo-msg::after {
+    content: attr(content);
+}
+
+@keyframes scroll-left {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+/*-- PAUSE ON HOVER - ACCESSIBILITY --*/
+.promo-banner:hover .promo-track,
+.promo-banner:focus-within .promo-track {
+    animation-play-state: paused;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/*-- END BANNER CONTAINER --*/
+
+/*-- SHOPPING CARDS --*/
+.category-img-wrapper {
+    aspect-ratio: 3/4;                
+    border-radius: 12px;
+    overflow: hidden;         
+    transition: transform .35s ease;
+    margin-top: 2rem;
+}
+
+.category-card:hover .category-img-wrapper {
+    transform: scale(1.05);    
+}
+
+.category-card:hover .category-img-wrapper {
+    box-shadow: 0 10px 25px rgba(0,0,0,.18);
+}
+
+.category-title {
+    font-family: "Nave Medium";
+    font-size: 1.25rem;
     font-weight: 700;
+    color: #3B3B3B;
+    transition: color .25s;
+}
+
+.category-card:hover .category-title {
+    color: #59132E;
+}
+
+/*-- END SHOPPING CARDS --*/
+
+/*-- SECTION TITLE --*/
+.section-heading {
+    font-family: "Nave Medium";
+    font-weight: 700;
+    font-size: 36px;
     text-transform: uppercase;
     margin-bottom: 0.25rem;
     letter-spacing: 1px;
+    color: #3B3B3B;
 }
 .section-sub {
     font-size: 0.9rem;
@@ -81,7 +284,52 @@ body {
     color: var(--brand-charcoal);
 }
 
-/* ---------- CAROUSEL ---------- */
+/*-- END SECTION TITLE --*/
+
+/*-- TESTIMONIALS --*/
+.testimonials-section {
+    background: #819280 ;              
+    color: #FEFFF1;
+    .section-heading{
+        color:#FEFFF1;
+    }
+    margin-top: 2.5rem;
+}
+
+.testimonial-item {
+    max-width: 760px;
+    padding-top: 2rem; 
+    blockquote{
+        font-family: 'Poppins Regular';
+        font-size: 20px;
+        line-height: 22px;
+    }
+    figcaption{
+        font-family: 'Poppins Medium';
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+#testimonialCarousel .carousel-inner {
+    height: 200px;
+}
+
+#testimonialCarousel .carousel-item {
+    height: 200px;
+}
+
+#testimonialCarousel .carousel-item.active,
+#testimonialCarousel .carousel-item-next,
+#testimonialCarousel .carousel-item-prev {
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.25rem; 
+}
+
+/*-- CAROUSEL --*/
 .carousel-control-prev,
 .carousel-control-next {
     width: 8%;
