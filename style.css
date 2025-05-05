@@ -329,6 +329,8 @@ body {
     padding: 0 1.25rem; 
 }
 
+/*-- END TESTIMONIALS --*/
+
 /*-- CAROUSEL --*/
 .carousel-control-prev,
 .carousel-control-next {
@@ -339,7 +341,9 @@ body {
     object-fit: cover;
 }
 
-/* ---------- CTA BUTTON ---------- */
+/*-- END CAROUSEL --*/
+
+/*-- CTA BUTTON --*/
 .btn-primary-brand {
     background: var(--brand-charcoal);
     border: none;
@@ -347,6 +351,42 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
+/*-- END CTA BUTTON --*/
+
+/*-- NEWSLETTER --*/
+
+.newsletter-section {
+    min-height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+
+.newsletter-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45); /* darken image so white text pops */
+}
+
+.newsletter-section > div {
+    position: relative;          /* lift text above overlay */
+    z-index: 1;
+}
+
+#newsletterForm input::placeholder {
+    color: #969da3;              /* soft grey placeholder */
+}
+
+#newsletterForm .form-control {
+    border-radius: 0;            /* square ends to match mock‑up */
+}
+
+#newsletterForm .btn-dark {
+    border-radius: 0;
+}
+
+/*-- END NEWSLETTER --*/
 
 /* ---------- FOOTER ---------- */
 footer {
