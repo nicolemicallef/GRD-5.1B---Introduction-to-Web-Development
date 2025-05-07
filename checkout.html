@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-</head>
-<body>
-    <form>
-        <h1>Checkout</h1>
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username">
-        <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <br>
-        <label for="creditcard">Card Number</label>
-        <input type="number" name="creditcard" id="creditcard" step="0">
-        <label for="expdatemon">Expiration Date</label>
-        <input type="text" list="months" id="month" name="month">
-        <datalist id="months">
-            <option value="01"></option>
-            <option value="02"></option>
-            <option value="03"></option>
-            <option value="04"></option>
-            <option value="05"></option>
-            <option value="06"></option>
-            <option value="07"></option>
-            <option value="08"></option>
-            <option value="09"></option>
-            <option value="10"></option>
-            <option value="11"></option>
-            <option value="12"></option>
-        </datalist>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Error 404 - Mumenti Sbieħ</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <style>
+        body {
+            background-color: #000000;
+            color: #fff;
 
-    </form>
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+        
+        p {
+            color: #ccc;
+            font-size: 1.25rem;
+        }
+        
+        a.btn-outline-light:hover {
+            color: #111;
+            background-color: #fff;
+            border-color: #fff;
+        }
+    </style>
+</head>
+
+
+    <main>
+        <div class="container">
+            <img src="Images/surprise/bulb GIF.gif" width="480" height="271">
+            <p class="text-muted mb-2">Error 404</p>
+            <h1 class="fw-bold mb-3">There's no light in here</h1>
+            <p class="mb-4">You thought I managed to code this far? <br> You have overestimated my abilities - the page you were looking for doesn’t exist.</p>
+            <a href="/" class="btn btn-outline-light">Return to homepage</a>
+        </div>
+    </main>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
