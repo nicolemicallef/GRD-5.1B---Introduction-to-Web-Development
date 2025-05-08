@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
@@ -28,14 +28,14 @@
         
         <a class="navbar-brand mx-lg-auto order-lg-auto mx-auto" href="/index.html">
             <img
-            src="Images/mumenti sbieh maroon logo.png"      
+            src="Images/mumenti-sbieh-maroon-logo.png"      
             width="140"
             height="140"
             alt="Mumenti Sbieh logo"
             class="shopbrandLogo"
             id="shopbrandLogo"
-            data-logo-large="Images/mumenti sbieh maroon logo.png"
-            data-logo-small="Images/maroon logomark.png" 
+            data-logo-large="Images/mumenti-sbieh-maroon-logo.png"
+            data-logo-small="Images/maroon-logomark.png" 
             >
         </a>
         
@@ -48,6 +48,7 @@
                 <li class="nav-item"><a class="nav-link" href="/aboutus.html">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="/userlogin.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/cart.html"><i class="bi bi-cart-fill"></i></a></li>
             </ul>
         </div>
         
@@ -69,10 +70,27 @@
 
 <!-- END HERO -->
 
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+    <div class="promo-track">
+        <span class="promo-msg">
+            🌸  Spring Special: 15% off all fresh bouquets — use code BLOOM15 at checkout! • Free decor rental delivery on orders over €75! ✨
+            <span class="promo-msg">
+                🌸  Spring Special: 15% off all fresh bouquets — use code BLOOM15 at checkout! • Free decor rental delivery on orders over €75! ✨
+            </span>
+        </span>
+    </div>
+        <span class="visually-hidden">
+            🌸  Spring Special: 15% off all fresh bouquets — use code BLOOM15 at checkout! • Free decor rental delivery on orders over €75! ✨
+        </span>
+</div>
+    
+<!-- END PROMO BANNER -->
+
 <!-- SHOP -->
 
 <section class="shop-section py-5">
-    <div class="container-lg">
+    <div class="container-fluid">
         
         <div class="text-center mb-4">
             <h2>Browse the Full Collection</h2>
@@ -83,53 +101,292 @@
                 <button class="btn btn-outline-dark filter-btn" data-filter="decor items">Decor Items</button>
                 <button class="btn btn-outline-dark filter-btn" data-filter="flower & decor bundles">Flower & Decor Bundles</button>
                 <button class="btn btn-outline-dark filter-btn" data-filter="wedding bundles">Wedding Bundles</button>
-                
             </div>
-            
-            
-            
         </div>
         
         
-        
-        <div class="row">
+        <div class="row g-4 mx-auto" id="productGrid">
             
-            <!-- Product Grid -->
-            <div class="col-lg-9">
                 <div class="row g-4" id="productGrid">
                     
-                    <!-- Example Product Card -->
-                    <div class="col-sm-6 col-md-4 product-card" data-category="fresh flowers" data-price="50">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="fresh flowers" data-price="50">
                         <div class="card h-100">
                             <img src="/Images/Flowers/flowers 6 - shop.jpg" class="product-img card-img-top" alt="red and pink bouquet">
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-1">Blush Peony Bunch</h5>
                                 <p class="card-text">€50.00</p>
                                 <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal1">View Details</button>
-                                
-                                <button class="btn btn-outline-dark add-to-cart" title="Add to Cart">
-                                    <i class="bi bi-cart-plus"></i>
+                                <button class="btn btn-outline-dark add-to-cart" 
+                                data-id="001"
+                                data-name="Blush Peony Bunch"
+                                data-img="/Images/Flowers/flowers 6 - shop.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
                                 </button>
                             </div>
                         </div>
-                    </a>
-                </div>
-                
-                <div class="col-sm-6 col-md-4 product-card" data-category="flower & decor bundles" data-price="45">
-                    <div class="card h-100">
-                        <img src="/Images/Flowers/flowers 7 - shop.jpg" class="product-img card-img-top" alt="yellow bouquet">
-                        <div class="card-body text-center">
-                            <h5 class="card-title mb-1">Yellow Bunch</h5>
-                            <p class="card-text">€45.00</p>
-                            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal2">View Details</button>
+                    </div>
+            
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="fresh flowers" data-price="45">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/flowers 7 - shop.jpg" class="product-img card-img-top" alt="yellow bouquet">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Yellow Bunch</h5>
+                                <p class="card-text">€45.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal2">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="002"
+                                data-name="Yellow Bunch"
+                                data-img="/Images/Flowers/flowers 7 - shop.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
-            
-            <!-- Repeat for more products... -->
-            
-        </div>
+                    
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="fresh flowers" data-price="49">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/flowers 8 - shop.jpg" class="product-img card-img-top" alt="pink peony bouquet">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Pink Peony Bunch</h5>
+                                <p class="card-text">€49.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal3">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="003"
+                                data-name="Pink Peony Bunch"
+                                data-img="/Images/Flowers/flowers 8 - shop.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="fresh flowers" data-price="45">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/flowers 9 - shop.jpg" class="product-img card-img-top" alt="red bouquet">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">The Red Bunch</h5>
+                                <p class="card-text">€45.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal4">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="004"
+                                data-name="The Red Bunch"
+                                data-img="/Images/Flowers/flowers 9 - shop.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="fresh flowers" data-price="55">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/flowers 10 - shop.jpg" class="product-img card-img-top" alt="purple and orange bouquet">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Purple & Orange Bunch</h5>
+                                <p class="card-text">€55.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal5">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="005"
+                                data-name="Purple & Orange Bunch"
+                                data-img="/Images/Flowers/flowers 10 - shop.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="fresh flowers" data-price="55">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/flowers 11 - shop.jpg" class="product-img card-img-top" alt="red and pink bouquet">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Red & Pink Bunch</h5>
+                                <p class="card-text">€55.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal6">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="006"
+                                data-name="Red & Pink Bunch"
+                                data-img="/Images/Flowers/flowers 11 - shop.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="decor items" data-price="150">
+                        <div class="card h-100">
+                            <img src="/Images/Decor/decor3.jpg" class="product-img card-img-top" alt="roofed bar cart with champagne glasses and a cooler">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Champagne Cart</h5>
+                                <p class="card-text">€150.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal7">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="007"
+                                data-name="Champagne Cart"
+                                data-img="/Images/Decor/decor3.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="decor items" data-price="75">
+                        <div class="card h-100">
+                            <img src="/Images/Decor/decor4.jpg" class="product-img card-img-top" alt="cocktail table with green floral cover">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Floral Cocktail Table</h5>
+                                <p class="card-text">€75.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal8">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="008"
+                                data-name="Floral Cocktail Table"
+                                data-img="/Images/Decor/decor4.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="decor items" data-price="75">
+                        <div class="card h-100">
+                            <img src="/Images/Decor/decor5.jpg" class="product-img card-img-top" alt="cocktail table with yellow velvet cover">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Yellow Velvet Cocktail Table</h5>
+                                <p class="card-text">€75.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal9">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="009"
+                                data-name="Yellow Velvet Cocktail Table"
+                                data-img="/Images/Decor/decor5.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="flower & decor bundles" data-price="275">
+                        <div class="card h-100">
+                            <img src="/Images/Decor/decor6.jpg" class="product-img card-img-top" alt="pale brown curtain backdrop with floral decor">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Floral Drapery Backdrop</h5>
+                                <p class="card-text">€275.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal10">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="010"
+                                data-name="Floral Drapery Backdrop"
+                                data-img="/Images/Decor/decor6.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="decor items" data-price="250">
+                        <div class="card h-100">
+                            <img src="/Images/Decor/decor8.jpg" class="product-img card-img-top" alt="pale yellow ostrich feather chandelier">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Ostrich Feather Chandelier</h5>
+                                <p class="card-text">€250.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal11">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="011"
+                                data-name="Ostrich Feather Chandelier"
+                                data-img="/Images/Decor/decor8.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="flower & decor bundles" data-price="150">
+                        <div class="card h-100">
+                            <img src="/Images/Decor/decor9.jpg" class="product-img card-img-top" alt="three covered tables of different height with drapery, candles and floral decorations">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Three Table Bundle</h5>
+                                <p class="card-text">€150.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal12">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="012"
+                                data-name="Three Table Bundle"
+                                data-img="/Images/Decor/decor9.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="wedding bundles" data-price="150">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/bridesmaid1.jpg" class="product-img card-img-top" alt="five small different coloured bouquets">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">The Famous Five</h5>
+                                <p class="card-text">€150.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal13">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="013"
+                                data-name="The Famous Five"
+                                data-img="/Images/Flowers/bridesmaid1.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="wedding bundles" data-price="120">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/bridesmaid2.jpg" class="product-img card-img-top" alt="four small different coloured bouquets">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">The Golden Girls</h5>
+                                <p class="card-text">€120.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal14">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="014"
+                                data-name="The Golden Girls"
+                                data-img="/Images/Flowers/bridesmaid2.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 product-card" data-category="wedding bundles" data-price="100">
+                        <div class="card h-100">
+                            <img src="/Images/Flowers/bride&groom2.jpg" class="product-img card-img-top" alt="bridal bouquet held by the bride and groom, the groom also has a matching boutonniere">
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-1">Mr & Mrs Smith</h5>
+                                <p class="card-text">€100.00</p>
+                                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal15">View Details</button>
+                                <button class="btn btn-outline-dark add-to-cart"
+                                data-id="015"
+                                data-name="Mr & Mrs Smith"
+                                data-img="/Images/Flowers/bridesmaid2.jpg"
+                                title="Add to Cart">
+                                <i class="bi bi-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                            <!-- Repeat for more products... -->
+                    
+                </div>
+
+
+                <!-- REMEMBER TO CHANGE PRODUCT DESCRIPTION ON MODALS - AT THE MOMENT THEY ARE ALL THE SAME-->
+
+
         <div class="modal fade" id="productModal1" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -145,7 +402,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="modal fade" id="productModal2" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
@@ -161,14 +418,217 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="modal fade" id="productModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Pink Peony Bunch</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Flowers/flowers 8 - shop.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €49.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">The Red Bunch</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Flowers/flowers 9 - shop.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €45.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Purple & Orange Bunch</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Flowers/flowers 10 - shop.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €55.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Red & Pink Bunch</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Flowers/flowers 11 - shop.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €55.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal7" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Champagne Cart</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Decor/decor3.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €150.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     
-</div>
+        <div class="modal fade" id="productModal8" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Floral Cocktail Table</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Decor/decor4.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €75.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</div>
+        <div class="modal fade" id="productModal9" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Yellow Velvet Cocktail Table</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Decor/decor5.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €75.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal10" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Floral Drapery Backdrop</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Decor/decor6.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €275.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal11" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Ostrich Feather Chandelier</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Decor/decor8.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €250.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal12" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Three Table Bundle</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Decor/decor9.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €150.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal13" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">The Famous Five</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Flowers/bridesmaid1.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €150.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal14" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">The Golden Girls</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Flowers/bridesmaid2.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €120.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="productModal15" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Mr & Mrs Smith</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/Images/Flowers/bride&groom2.jpg" class="modal-img mb-3">
+                        <p>This gorgeous bouquet is hand-tied with seasonal peonies and foliage. Perfect for romantic occasions or a stylish gift.</p>
+                        <p><strong>Price:</strong> €100.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
 </section>
-
-<!-- Modal Component -->
 
 <!-- END SHOP -->
 
@@ -228,6 +688,10 @@
     
 </script>
 
+<!-- END NAVBAR SCROLL -->
+
+<!-- SHOP FILTER BUTTONS -->
+
 <script>
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
@@ -246,7 +710,39 @@
     });
 </script>
 
+<!-- END SHOP FILTER BUTTONS-->
 
+<!-- ADD TO CART -->
+
+<script>
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const card = btn.closest('.product-card')
+            const item = {
+                id: btn.dataset.id,
+                name: btn.dataset.name,
+                price: parseFloat(card.dataset.price),
+                img: btn.dataset.img,
+                quantity: 1
+            };
+            
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            
+            const existingItem = cart.find(i => i.id === item.id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push(item);
+            }
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+            alert(`${item.name} added to cart!`);
+        });
+    });
+</script>
+
+<!-- END ADD TO CART -->
 
 </body>
 </html>

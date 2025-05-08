@@ -519,6 +519,13 @@ p {
     color: #3B3B3B !important;         
 }
 
+.nl-form {
+    .btn-outline-dark {
+        color: #FEFFF1;
+        border-color: #3B3B3B;
+    }
+}
+
 @media (max-width: 767.98px) {
     .nl-form .input-group {
         flex-direction: column;
@@ -572,7 +579,7 @@ footer a {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,.05);
+    background: #0000000d;
     z-index: 0;
 }
 
@@ -611,8 +618,8 @@ footer a {
 }
 
 .modal-img {
-    width: 100%;
-    height: 800px; 
+    width: 60%;
+    height: 60%; 
     object-fit: cover;
     object-position: center;
     border-radius: 0.5rem; 
@@ -640,7 +647,6 @@ footer a {
 }
 
 .card {
-    background-color: #FAE3E4;
+    background-color: #faeff0;
 }
-
 
