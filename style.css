@@ -646,6 +646,12 @@ footer a {
     }
 }
 
+.btn-outline-dark {
+    --bs-btn-active-color: #FEFFF1;
+    --bs-btn-active-bg: #59132E;
+    --bs-btn-active-border-color: #59132E;
+}
+
 .card {
     background-color: #faeff0;
 }
