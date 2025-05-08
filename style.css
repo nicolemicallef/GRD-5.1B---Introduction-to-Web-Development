@@ -306,6 +306,41 @@ p {
     --bs-btn-hover-color:      #FEFFF1; 
 }
 
+.btn-outline-dark{
+    color:#59132E;
+    border-color: #59132E;
+    .bi-cart-plus {
+        color: #59132E;
+    }
+}
+
+.btn-outline-dark:hover {
+    color: #FEFFF1;
+    background-color: #59132E;
+    border-color: #59132E;
+    .bi-cart-plus {
+        color: #FEFFF1;
+    }
+}
+
+.btn-outline-dark {
+    --bs-btn-active-color: #FEFFF1;
+    --bs-btn-active-bg: #59132E;
+    --bs-btn-active-border-color: #59132E;
+}
+
+.btn-dark {
+    background-color: #334462;
+    border-color: #334462;
+    color: #FEFFF1;
+}
+
+.btn-dark:hover {
+    background-color: #6F7899;
+    border-color: #6F7899;
+    color: #FEFFF1
+}
+
 /*-- END BUTTONS --*/
 
 /*-- BANNER --*/
@@ -608,6 +643,10 @@ footer a {
     text-shadow: 0 0 10px #00000073;
 }
 
+/*-- END SHOP HERO --*/
+
+/*-- PRODUCT CARDS --*/
+
 .product-img {
     width: 100%;
     height: 300px;
@@ -616,6 +655,14 @@ footer a {
     border-top-right-radius: 0.25rem;
     border-top-left-radius: 0.25rem; 
 }
+
+.card {
+    background-color: #faeff0;
+}
+
+/*-- END PRODUCT CARDS --*/
+
+/*-- SHOP MODALS --*/
 
 .modal-img {
     width: 60%;
@@ -629,30 +676,27 @@ footer a {
     text-align: center;
 }
 
-.btn-outline-dark{
-    color:#59132E;
-    border-color: #59132E;
-    .bi-cart-plus {
-        color: #59132E;
+/*-- END SHOP MODALS --*/
+
+/*-- CONTACT FORM --*/
+
+#contactuspageContent {
+    padding-top: calc(var(--bs-navbar-padding-y, 1rem)*2 + 8rem);
+}
+
+.text-lg-end{
+    text-align: left !important;
+    .h1, h1{
+        line-height: 1;
+        margin-bottom: 1.5rem;
     }
 }
 
-.btn-outline-dark:hover {
-    color: #FEFFF1;
-    background-color: #59132E;
-    border-color: #59132E;
-    .bi-cart-plus {
-        color: #FEFFF1;
-    }
+.bg-light {
+    background-color: #B5B6C8 !important;
 }
 
-.btn-outline-dark {
-    --bs-btn-active-color: #FEFFF1;
-    --bs-btn-active-bg: #59132E;
-    --bs-btn-active-border-color: #59132E;
-}
-
-.card {
-    background-color: #faeff0;
+#contactuspageContent .newsletter-section, contact-us{
+    background-color: #334462;
 }
 

@@ -4,12 +4,319 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Mumenti Sbieh — Contact Us</title>
 </head>
-<body>
-    <h1>this is the contact page</h1>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- NAVBAR-->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <nav id="shopNav" class="navbar fixed-top navbar-expand-lg py-2.5">
+        <div class="container-lg">
+            <button
+            class="navbar-toggler position-absolute start-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#shopNavCollapse"
+            aria-controls="shopNavCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a class="navbar-brand mx-lg-auto order-lg-auto mx-auto" href="/index.html">
+            <img
+            src="Images/mumenti-sbieh-maroon-logo.png"      
+            width="140"
+            height="140"
+            alt="Mumenti Sbieh logo"
+            class="shopbrandLogo"
+            id="shopbrandLogo"
+            data-logo-large="Images/mumenti-sbieh-maroon-logo.png"
+            data-logo-small="Images/maroon-logomark.png" 
+            >
+        </a>
+        
+        <div class="collapse navbar-collapse text-center" id="shopNavCollapse">
+            <ul class="navbar-nav ms-auto gap-lg-4 text-center flex-lg-row flex-column">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/eventboard.html">Event Board</a></li>
+                <li class="nav-item"><a class="nav-link" href="/aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/userlogin.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/cart.html"><i class="bi bi-cart-fill"></i></a></li>
+            </ul>
+        </div>
+        
+        
+    </div>
+</nav>
+
+<!-- END NAVBAR-->
+
+<main id="contactuspageContent" class="flex-grow-1">
+
+<!-- CONTACT FORM -->
+
+<section id="contact" class="container-lg py-5">
+    <div class="container-lg">
+        
+        <div class="row mb-5">
+            <div class="col-lg-5 text-lg-end mb-3 mb-lg-0">
+                <h1>Let's get connected</h1>
+                <p class="section-sub">
+                    Have a question or need a bespoke floral quote? <br>
+                    Send us a message – we’d love to help!
+                </p>
+            </div>
+            
+            <!-- CONTACT FORM -->
+            <div class="col-lg-7">
+                <div class="bg-light p-4 rounded shadow-sm" id="contactBox">
+                    <form id="contactForm" class="row g-3">
+                        
+                        <div class="col-md-12">
+                            <label class="form-label" for="name">Full Name<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <label class="form-label" for="email">Email<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label" for="phone">Phone<span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        
+                        <div class="col-md-6">
+                        <label for="helpTopic" class="form-label">
+                            I'm looking for help with:
+                        </label>
+                        <select id="helpTopic" name="helpTopic" class="form-select">
+                            <option value="" selected disabled hidden>Choose a topic…</option>
+                            <option value="existing order">My existing order</option>
+                            <option value="delivery">Delivery & tracking</option>
+                            <option value="custom quote">Custom quote</option>
+                            <option value="custom bouquet">Custom bouquet</option>
+                            <option value="event floristry & decor">Event floristry & décor</option>
+                            <option value="account help">Account / login help</option>
+                            <option value="other">Other question</option>
+                        </select>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="form-label" for="subject">Subject<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        
+                        <div class="col-12">
+                            <label class="form-label" for="message">Message<span class="text-danger">*</span></label>
+                            <textarea id="message" rows="5" class="form-control" required></textarea>
+                        </div>
+                        
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-dark px-4">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END CONTACT FORM -->
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+    <div class="container-lg">
+        
+        <div class="row align-items-center gy-4">
+            
+            <div class="col-12 col-lg-7">
+                <h3 class="section-heading mb-2">
+                    Subscribe to our newsletter
+                </h3>
+                <p class="section-sub mb-0">
+                    Subscribe to our newsletter and instantly receive a <strong>15% discount</strong> code for your first purchase site‑wide.
+                </p>
+            </div>
+            
+            <div class="col-12 col-lg-5">
+                <form id="nlForm" class="nl-form">
+                    <div class="input-group">
+                        <input type="email"
+                        class="form-control form-control-lg nl-email"
+                        placeholder="Email Address"
+                        required
+                        aria-label="Email address">
+                        <button class="btn btn-outline-dark btn-lg nl-submit"
+                        type="submit">
+                        Subscribe
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+<!-- END NEWSLETTER -->
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container-lg">
+        <a href="/faq.html">FAQ</a>
+        <a href="/t&c.html">TERMS & CONDITIONS</a>
+        <a href="/privacy.html">PRIVACY POLICY</a>
+        <a href="/contact.html">SUPPORT</a>
+    </div>
+</footer>
+
+<!-- END FOOTER-->
+
+
+<!-- JAVASCRIPT -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- NAVBAR SCROLL -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const nav      = document.getElementById('shopNav');
+        const logo     = document.getElementById('shopbrandLogo');
+        const bigSrc   = logo.dataset.logoLarge;
+        const smallSrc = logo.dataset.logoSmall;
+        const shrinkOn = 5;                          
+        
+        function handleScroll() {
+            
+            if (window.scrollY === 0) {
+                nav.classList.add('navbar--top');        
+            } else {
+                nav.classList.remove('navbar--top');   
+            }
+            
+            if (window.scrollY >= shrinkOn) {
+                nav.classList.add('navbar--shrink');
+                if (logo.getAttribute('src') !== smallSrc) {
+                    logo.setAttribute('src', smallSrc);
+                }
+            } else {
+                nav.classList.remove('navbar--shrink');
+                if (logo.getAttribute('src') !== bigSrc) {
+                    logo.setAttribute('src', bigSrc);
+                }
+            }
+        }
+        
+        handleScroll();              
+        window.addEventListener('scroll', handleScroll);
+    });
+    
+    
+</script>
+
+<!-- END NAVBAR SCROLL -->
+
+<!-- CONTACT FORM CONTAINER CHANGE-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        const form = document.getElementById('contactForm');
+        const box  = document.getElementById('contactBox');
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault();                      
+            
+            const name    = document.getElementById('name').value.trim();
+            const email   = document.getElementById('email').value.trim();
+            const phone   = document.getElementById('phone').value.trim();
+            const topic   = document.getElementById('helpTopic').value;
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            const mailTo  = 'info@rubendecor.com';
+            const body    = `
+    Name: ${name}
+    Email: ${email}
+    Phone: ${phone}
+    
+    Topic: ${topic}
+    Message:
+    ${message}
+        `;
+            
+            const mailLink = `mailto:${mailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            window.location.href = mailLink;
+            
+            box.innerHTML = `
+            <div class="text-center py-5">
+            <h3 class="fw-semibold mb-3">Thank you, ${name.split(' ')[0] || 'friend'}!</h3>
+            <p class="lead mb-0">
+            Your message was sent successfully.<br>
+            We'll get back to you within two - three working days.
+            </p>
+            </div>`;
+        });
+    });
+</script>
+
+<!-- END CONTACT FORM CONTAINER CHANGE-->
+
+<!-- NEWSLETTER SIGNUP BANNER CHANGE-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        const form = document.getElementById('nlForm');
+        if (!form) return;
+        
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const emailField = form.querySelector('.nl-email');
+            if (!emailField) return;
+            
+            const raw = emailField.value.trim();
+            if (!raw) return;
+            
+            const email   = encodeURIComponent(raw);
+            const subject = encodeURIComponent('New newsletter subscription');
+            const body    = encodeURIComponent('Please add ' + email + ' to the mailing list.');
+            window.location.href =
+            `mailto:info@rubendecor.com?subject=${subject}&body=${body}`;
+            
+            const banner = document.querySelector('.newsletter-section');
+            banner.innerHTML = `
+            <div class="container-lg text-center">
+                <h2 class="section-heading">
+                    Thank you for subscribing!
+                </h2>
+                <p class="section-subpostnlsubmit lead mb-0">
+                    You’re on the list — watch your inbox for fresh blooms & exclusive offers
+                </p>
+            </div>
+        `;
+        });
+        
+    });
+</script>
+
+<!-- END NEWSLETTER SIGNUP BANNER CHANGE-->
+
 </body>
 </html>
