@@ -700,3 +700,66 @@ footer a {
     background-color: #334462;
 }
 
+/*-- END CONTACT FORM --*/
+
+/*-- CART --*/
+#cartpageContent{
+    padding-top: calc(var(--bs-navbar-padding-y, 1rem)*2 + 5rem);
+}
+
+.flex-grow-1, h2{
+    line-height: 2;
+}
+
+#cart.html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+/*-- END CART --*/
+
+/*-- PORTFOLIO PAGE --*/
+
+main.flex-grow-1 {
+    flex: 1 0 auto;
+}
+
+.portfolio-img{
+    max-height: 600px;    
+    object-fit: cover;
+}
+
+.portfolio-main{
+    padding-top: 150px !important;
+}
+
+@media (max-width: 991.98px){
+    .portfolio-main{
+        padding-top: 72px;
+    }
+}
+
+.featured-projects-hero{
+    padding-bottom: 5rem !important;
+}
+
+.uniform-thumb{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.featured-projects{
+    .section-sub{
+        padding-top: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.mb-5{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/*-- END PORTFOLIO PAGE --*/
