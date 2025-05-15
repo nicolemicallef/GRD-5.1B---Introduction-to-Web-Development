@@ -788,7 +788,7 @@ main.flex-grow-1 {
     padding-top: 170px !important;
 }
 
-.faq-main, h1{
+.faq-main h1{
     text-align: center;
     line-height: 15rem;
 }
@@ -802,11 +802,16 @@ main.flex-grow-1 {
 
 /*-- TERMS --*/
 .terms-main{
-    padding-top: 120px;
+    padding-top: 150px;
     padding-bottom: 100px;
+}
+
+.terms-main h1{
+    line-height: 15rem;
 }
 
 .terms-main, h4{
     line-height: 2.5rem;
 }
 
+/*-- END TERMS --*/
