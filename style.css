@@ -556,9 +556,9 @@ p {
 }
 
 .nl-form .btn-outline-dark {
-        color: #FEFFF1;
-        border-color: #3B3B3B;
-    }
+    color: #FEFFF1;
+    border-color: #3B3B3B;
+}
 
 @media (max-width: 767.98px) {
     .nl-form .input-group {
@@ -752,9 +752,9 @@ main.flex-grow-1 {
 }
 
 .featured-projects .section-sub{
-        padding-top: 1rem;
-        line-height: 1.5rem;
-    }
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
 
 .mb-5{
     margin-top: 0 !important;
@@ -762,3 +762,51 @@ main.flex-grow-1 {
 }
 
 /*-- END PORTFOLIO PAGE --*/
+
+/*-- ABOUT US PAGE --*/
+
+.about-arrow { 
+    width: 7%; 
+}
+
+
+.mt-6 { margin-top: 5rem !important; }
+
+
+#aboutCarousel .carousel-item img{
+
+    width: 100%;              /* fill slide width                         */
+    max-height: 500px;        /* <-- tweak this to any height you prefer  */
+    object-fit: cover;        /* crop to fill frame, no distortion        */
+}
+
+/*-- END ABOUT US PAGE --*/
+
+/*-- FAQ -*/
+
+.faq-main{
+    padding-top: 170px !important;
+}
+
+.faq-main, h1{
+    text-align: center;
+    line-height: 15rem;
+}
+
+.faq-main, .accordion-body{
+    text-align: left;
+    line-height: 2rem;
+}
+
+/*-- END FAQ --*/
+
+/*-- TERMS --*/
+.terms-main{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.terms-main, h4{
+    line-height: 2.5rem;
+}
+

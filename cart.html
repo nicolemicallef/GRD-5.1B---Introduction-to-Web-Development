@@ -121,21 +121,21 @@
                     <span id="sumTotal">€0.00</span>
                 </p>
                 
-                <button class="btn btn-dark w-100 mt-3" id="checkoutBtn" disabled>
-                    Proceed to Checkout
-                </button>
-            </div>
-        </aside>
-        
-    </div>
-    </section>
+                <a id="checkoutBtn" href="error404.html" class="btn btn-dark w-100 mt-3 disabled" aria-disabled="true" tabindex="-1">             
+                Proceed to Checkout
+            </a>
+        </div>
+    </aside>
+    
+</div>
+</section>
 </main>
 
 <!-- FOOTER -->
 <footer>
     <div class="container-lg">
         <a href="/faq.html">FAQ</a>
-        <a href="/t&c.html">TERMS & CONDITIONS</a>
+        <a href="/terms.html">TERMS & CONDITIONS</a>
         <a href="/privacy.html">PRIVACY POLICY</a>
         <a href="/contact.html">SUPPORT</a>
     </div>
@@ -257,6 +257,8 @@
             discBox.textContent  = `‑€${discount.toFixed(2)}`;
             delivBox.textContent = `€${delivery.toFixed(2)}`;
             totalBox.textContent = `€${total.toFixed(2)}`;
+            
+            checkoutBtn.classList.toggle('disabled', cart.length === 0);
             
             const rowDiscount = document.getElementById('rowDiscount');
             rowDiscount.classList.toggle('d-none', promo.rate === 0);
