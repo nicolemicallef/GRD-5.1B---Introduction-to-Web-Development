@@ -27,33 +27,33 @@ body {
 @font-face {
     font-family: 'Poppins Medium';
     src:local('Poppins Medium'), local('Poppins-Medium'),
-    url('/Fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    url('Fonts/Poppins/Poppins-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins Regular';
     font-style: normal;
     src:local('Poppins Regular'), local('Poppins-Regular'),
-    url('/Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    url('Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Poppins Italic';
     font-style: italic;
     src:local('Poppins Italic'), local('Poppins-Italic'),
-    url('/Fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+    url('Fonts/Poppins/Poppins-Italic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Nave Bold';
     src:local('Nave Bold'), local('nave-bold'),
-    url('/Fonts/nave-font-family/nave-bold.ttf') format('truetype');
+    url('Fonts/nave-font-family/nave-bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Nave Medium';
     src:local('Nave Medium'), local('nave-medium'),
-    url('/Fonts/nave-font-family/nave-medium.ttf') format('truetype');
+    url('Fonts/nave-font-family/nave-medium.ttf') format('truetype');
 }
 
 /*-- END FONTS --*/ 
@@ -225,7 +225,7 @@ p {
 /*-- HOME HERO --*/
 .hero {
     position: relative;
-    background: url("/Images/Flowers/flowers.jpg")
+    background: url("Images/Flowers/flowers.jpg")
     center/cover no-repeat; 
     display: flex;  
     align-items: center;
@@ -280,7 +280,6 @@ p {
 
 /*-- BUTTONS --*/
 
-/*!! figure out how to have shadow on only normal button, NOT hover !!*/
 .btn-outline-light {
     border-radius: 3rem;                 
     padding: 0.8rem 3rem;       
@@ -605,7 +604,7 @@ footer a {
 
 .shop-hero {
     min-height: 60vh;
-    background: url("/Images/Flowers/banner1.jpg") top center/cover no-repeat;
+    background: url("Images/Flowers/banner1.jpg") top center/cover no-repeat;
     position: relative;
 }
 
@@ -774,10 +773,9 @@ main.flex-grow-1 {
 
 
 #aboutCarousel .carousel-item img{
-
-    width: 100%;              /* fill slide width                         */
-    max-height: 500px;        /* <-- tweak this to any height you prefer  */
-    object-fit: cover;        /* crop to fill frame, no distortion        */
+    width: 100%;            
+    max-height: 500px;
+    object-fit: cover;
 }
 
 /*-- END ABOUT US PAGE --*/
