@@ -24,301 +24,302 @@
             aria-label="Toggle navigation"
             >
             <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <a class="navbar-brand mx-lg-auto order-lg-auto mx-auto" href="/index.html">
-            <img
-            src="Images/mumenti-sbieh-maroon-logo.png"      
-            width="140"
-            height="140"
-            alt="Mumenti Sbieh logo"
-            class="shopbrandLogo"
-            id="shopbrandLogo"
-            data-logo-large="Images/mumenti-sbieh-maroon-logo.png"
-            data-logo-small="Images/maroon-logomark.png" 
-            >
-        </a>
-        
-        <div class="collapse navbar-collapse text-center" id="shopNavCollapse">
-            <ul class="navbar-nav ms-auto gap-lg-4 text-center flex-lg-row flex-column">
-                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/shop.html">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="/eventboard.html">Event Board</a></li>
-                <li class="nav-item"><a class="nav-link" href="/aboutus.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="/userlogin.html">Login</a></li>
-            </ul>
-        </div>
-        
-        
-    </div>
-</nav>
-
-<!-- END NAVBAR-->
-
-<!-- CART PAGE MAIN SECTION -->
-
-<main id="cartpageContent" class="flex-grow-1">
-    
-    <section class="container-xl py-5">
-        
-        <h2>Your Shopping Cart</h2>
-        
-        <div class="row g-5">
+            </button>
             
-            <div class="col-lg-8">
-                
-                <div class="bg-light border rounded-top d-none d-md-flex fw-semibold px-3 py-2">
-                    <div class="col-md-6">Item</div>
-                    <div class="col-md-2 text-center">Price</div>
-                    <div class="col-md-2 text-center">Qty</div>
-                    <div class="col-md-2 text-end">Subtotal</div>
-                </div>
-                
-                <div id="cartItems" class="border border-top-0 rounded-bottom p-3"></div>
-                
-                <div class="text-center mt-4">
-                    <a href="/shop.html" class="btn btn-outline-dark px-5">Continue Shopping</a>
-                </div>
+            <a class="navbar-brand mx-lg-auto order-lg-auto mx-auto" href="/index.html">
+                <img
+                src="Images/mumenti-sbieh-maroon-logo.png"      
+                width="140"
+                height="140"
+                alt="Mumenti Sbieh logo"
+                class="shopbrandLogo"
+                id="shopbrandLogo"
+                data-logo-large="Images/mumenti-sbieh-maroon-logo.png"
+                data-logo-small="Images/maroon-logomark.png" 
+                >
+            </a>
+            
+            <div class="collapse navbar-collapse text-center" id="shopNavCollapse">
+                <ul class="navbar-nav ms-auto gap-lg-4 text-center flex-lg-row flex-column">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/eventboard.html">Event Board</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/userlogin.html">Login</a></li>
+                </ul>
             </div>
             
             
-            <aside class="col-lg-4">
-                <div class="bg-light p-4 rounded shadow-sm" id="summaryBox">
+        </div>
+    </nav>
+
+    <!-- END NAVBAR-->
+
+    <!-- CART PAGE MAIN SECTION -->
+
+    <main id="cartpageContent" class="flex-grow-1">
+        
+        <section class="container-xl py-5">
+            
+            <h2>Your Shopping Cart</h2>
+            
+            <div class="row g-5">
+                
+                <div class="col-lg-8">
                     
-                    <h4>Order Summary</h4>
-                    
-                    <div class="d-flex justify-content-between mb-1">
-                        <span>Items subtotal</span>
-                        <span id="sumSubtotal">€0.00</span>
+                    <div class="bg-light border rounded-top d-none d-md-flex fw-semibold px-3 py-2">
+                        <div class="col-md-6">Item</div>
+                        <div class="col-md-2 text-center">Price</div>
+                        <div class="col-md-2 text-center">Qty</div>
+                        <div class="col-md-2 text-end">Subtotal</div>
                     </div>
                     
-                    <div id="rowDiscount"
-                    class="d-flex justify-content-between mb-1 d-none">
-                    <span>Discount</span>
-                    <span id="sumDiscount">‑€0.00</span>
+                    <div id="cartItems" class="border border-top-0 rounded-bottom p-3">
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <a href="/shop.html" class="btn btn-outline-dark px-5">Continue Shopping</a>
+                    </div>
                 </div>
                 
-                <div class="d-flex justify-content-between mb-1">
-                    <span>Delivery</span>
-                    <span id="sumDelivery">€0.00</span>
-                </div>
                 
-                <div class="input-group my-3">
-                    <input type="text" id="promoInput" class="form-control"
-                    placeholder="Promo code" autocomplete="off">
-                    <button class="btn btn-outline-secondary" id="applyPromo">Apply</button>
-                </div>
-                <small class="text-danger mb-2" id="promoError" style="display:none;">
-                    Invalid code
-                </small>
-                
-                <hr>
-                
-                <p class="d-flex justify-content-between fw-semibold fs-5">
-                    <span>Total</span>
-                    <span id="sumTotal">€0.00</span>
-                </p>
-                
-                <a id="checkoutBtn" href="error404.html" class="btn btn-dark w-100 mt-3 disabled" aria-disabled="true" tabindex="-1">             
-                Proceed to Checkout
-            </a>
+                <aside class="col-lg-4">
+                    <div class="bg-light p-4 rounded shadow-sm" id="summaryBox">
+                        
+                        <h4>Order Summary</h4>
+                        
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Items subtotal</span>
+                            <span id="sumSubtotal">€0.00</span>
+                        </div>
+                        
+                        <div id="rowDiscount"
+                        class="d-flex justify-content-between mb-1 d-none">
+                        <span>Discount</span>
+                        <span id="sumDiscount">‑€0.00</span>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Delivery</span>
+                            <span id="sumDelivery">€0.00</span>
+                        </div>
+                        
+                        <div class="input-group my-3">
+                            <input type="text" id="promoInput" class="form-control"
+                            placeholder="Promo code" autocomplete="off">
+                            <button class="btn btn-outline-secondary" id="applyPromo">Apply</button>
+                        </div>
+                        <small class="text-danger mb-2" id="promoError" style="display:none;">
+                            Invalid code
+                        </small>
+                        
+                        <hr>
+                        
+                        <p class="d-flex justify-content-between fw-semibold fs-5">
+                            <span>Total</span>
+                            <span id="sumTotal">€0.00</span>
+                        </p>
+                        
+                        <a id="checkoutBtn" href="error404.html" class="btn btn-dark w-100 mt-3 disabled" aria-disabled="true" tabindex="-1">             
+                        Proceed to Checkout
+                        </a>
+                    </div>
+                </aside>
+        
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-lg">
+            <a href="/faq.html">FAQ</a>
+            <a href="/terms.html">TERMS & CONDITIONS</a>
+            <a href="/privacy.html">PRIVACY POLICY</a>
+            <a href="/contact.html">SUPPORT</a>
         </div>
-    </aside>
-    
-</div>
-</section>
-</main>
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-    <div class="container-lg">
-        <a href="/faq.html">FAQ</a>
-        <a href="/terms.html">TERMS & CONDITIONS</a>
-        <a href="/privacy.html">PRIVACY POLICY</a>
-        <a href="/contact.html">SUPPORT</a>
-    </div>
-</footer>
+    <!-- END FOOTER-->
 
-<!-- END FOOTER-->
+    <!-- JAVASCRIPT -->
 
-<!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- NAVBAR SCROLL -->
 
-<!-- NAVBAR SCROLL -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const nav      = document.getElementById('shopNav');
-        const logo     = document.getElementById('shopbrandLogo');
-        const bigSrc   = logo.dataset.logoLarge;
-        const smallSrc = logo.dataset.logoSmall;
-        const shrinkOn = 5;                          
-        
-        function handleScroll() {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nav      = document.getElementById('shopNav');
+            const logo     = document.getElementById('shopbrandLogo');
+            const bigSrc   = logo.dataset.logoLarge;
+            const smallSrc = logo.dataset.logoSmall;
+            const shrinkOn = 5;                          
             
-            if (window.scrollY === 0) {
-                nav.classList.add('navbar--top');        
-            } else {
-                nav.classList.remove('navbar--top');   
-            }
-            
-            if (window.scrollY >= shrinkOn) {
-                nav.classList.add('navbar--shrink');
-                if (logo.getAttribute('src') !== smallSrc) {
-                    logo.setAttribute('src', smallSrc);
-                }
-            } else {
-                nav.classList.remove('navbar--shrink');
-                if (logo.getAttribute('src') !== bigSrc) {
-                    logo.setAttribute('src', bigSrc);
-                }
-            }
-        }
-        
-        handleScroll();              
-        window.addEventListener('scroll', handleScroll);
-    });
-    
-    
-</script>
-
-<!-- END NAVBAR SCROLL -->
-
-<!-- ADD TO CART -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        
-        const listBox     = document.getElementById('cartItems');
-        const subBox      = document.getElementById('sumSubtotal');
-        const discBox     = document.getElementById('sumDiscount');
-        const delivBox    = document.getElementById('sumDelivery');
-        const totalBox    = document.getElementById('sumTotal');
-        const checkoutBtn = document.getElementById('checkoutBtn');
-        const promoInput  = document.getElementById('promoInput');
-        const promoBtn    = document.getElementById('applyPromo');
-        const promoError  = document.getElementById('promoError');
-        
-        let promo = { code:'', rate:0 };
-        
-        function renderCart() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            let html = '', subtotal = 0;
-            
-            if (cart.length === 0) {
-                listBox.innerHTML = '<p class="py-3">Your cart is empty.</p>';
-                subBox.textContent   = '€0.00';
-                discBox.textContent  = '‑€0.00';
-                delivBox.textContent = '€0.00';
-                totalBox.textContent = '€0.00';
-                checkoutBtn.disabled = true;
-                return;
-            }
-            
-            
-            
-            cart.forEach((item, i) => {
-                const line = item.price * item.quantity;
-                subtotal  += line;
+            function handleScroll() {
                 
-                html += `
-            <div class="row align-items-center gy-2 py-2 border-top">
-                <div class="col-8 col-md-6 d-flex align-items-center">
-                <img src="${item.img}" width="60" class="me-3 rounded">
-                <div>
-                <strong>${item.name}</strong><br>
-                <button class="btn btn-sm btn-link p-0 text-danger remove"
-                data-index="${i}">Remove</button>
+                if (window.scrollY === 0) {
+                    nav.classList.add('navbar--top');        
+                } else {
+                    nav.classList.remove('navbar--top');   
+                }
+                
+                if (window.scrollY >= shrinkOn) {
+                    nav.classList.add('navbar--shrink');
+                    if (logo.getAttribute('src') !== smallSrc) {
+                        logo.setAttribute('src', smallSrc);
+                    }
+                } else {
+                    nav.classList.remove('navbar--shrink');
+                    if (logo.getAttribute('src') !== bigSrc) {
+                        logo.setAttribute('src', bigSrc);
+                    }
+                }
+            }
+            
+            handleScroll();              
+            window.addEventListener('scroll', handleScroll);
+        });
+        
+        
+    </script>
+
+    <!-- END NAVBAR SCROLL -->
+
+    <!-- ADD TO CART -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const listBox     = document.getElementById('cartItems');
+            const subBox      = document.getElementById('sumSubtotal');
+            const discBox     = document.getElementById('sumDiscount');
+            const delivBox    = document.getElementById('sumDelivery');
+            const totalBox    = document.getElementById('sumTotal');
+            const checkoutBtn = document.getElementById('checkoutBtn');
+            const promoInput  = document.getElementById('promoInput');
+            const promoBtn    = document.getElementById('applyPromo');
+            const promoError  = document.getElementById('promoError');
+            
+            let promo = { code:'', rate:0 };
+            
+            function renderCart() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                let html = '', subtotal = 0;
+                
+                if (cart.length === 0) {
+                    listBox.innerHTML = '<p class="py-3">Your cart is empty.</p>';
+                    subBox.textContent   = '€0.00';
+                    discBox.textContent  = '‑€0.00';
+                    delivBox.textContent = '€0.00';
+                    totalBox.textContent = '€0.00';
+                    checkoutBtn.disabled = true;
+                    return;
+                }
+                
+                
+                
+                cart.forEach((item, i) => {
+                    const line = item.price * item.quantity;
+                    subtotal  += line;
+                    
+                    html += `
+                <div class="row align-items-center gy-2 py-2 border-top">
+                    <div class="col-8 col-md-6 d-flex align-items-center">
+                    <img src="${item.img}" width="60" class="me-3 rounded">
+                    <div>
+                    <strong>${item.name}</strong><br>
+                    <button class="btn btn-sm btn-link p-0 text-danger remove"
+                    data-index="${i}">Remove</button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-4 col-md-2 text-md-center">
-                €${item.price.toFixed(2)}
-            </div>
-            <div class="col-6 col-md-2 mt-2 mt-md-0">
-                <input type="number" min="1" class="form-control form-control-sm qty"
-                data-index="${i}" value="${item.quantity}">
-            </div>
-            <div class="col-6 col-md-2 text-end fw-semibold">
-                €${line.toFixed(2)}
-            </div>
-            </div>`;
+                <div class="col-4 col-md-2 text-md-center">
+                    €${item.price.toFixed(2)}
+                </div>
+                <div class="col-6 col-md-2 mt-2 mt-md-0">
+                    <input type="number" min="1" class="form-control form-control-sm qty"
+                    data-index="${i}" value="${item.quantity}">
+                </div>
+                <div class="col-6 col-md-2 text-end fw-semibold">
+                    €${line.toFixed(2)}
+                </div>
+                </div>`;
+                });
+                listBox.innerHTML = html;
+                
+                const discount  = +(subtotal * promo.rate).toFixed(2);
+                const afterDisc = subtotal - discount;
+                const delivery  = afterDisc >= 75 || afterDisc === 0 ? 0 : 20;
+                const total     = afterDisc + delivery;
+                
+                subBox.textContent   = `€${subtotal.toFixed(2)}`;
+                discBox.textContent  = `‑€${discount.toFixed(2)}`;
+                delivBox.textContent = `€${delivery.toFixed(2)}`;
+                totalBox.textContent = `€${total.toFixed(2)}`;
+                
+                checkoutBtn.classList.toggle('disabled', cart.length === 0);
+                
+                const rowDiscount = document.getElementById('rowDiscount');
+                rowDiscount.classList.toggle('d-none', promo.rate === 0);
+                
+                promoError.style.display = 'none';
+                checkoutBtn.disabled = cart.length === 0;
+                
+            }
+            
+            
+            
+            renderCart();
+            
+            listBox.addEventListener('change', e => {
+                if (!e.target.classList.contains('qty')) return;
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart[e.target.dataset.index].quantity =
+                Math.max(1, parseInt(e.target.value,10)||1);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                renderCart();
             });
-            listBox.innerHTML = html;
             
-            const discount  = +(subtotal * promo.rate).toFixed(2);
-            const afterDisc = subtotal - discount;
-            const delivery  = afterDisc >= 75 || afterDisc === 0 ? 0 : 20;
-            const total     = afterDisc + delivery;
+            listBox.addEventListener('click', e => {
+                if (!e.target.classList.contains('remove')) return;
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.splice(e.target.dataset.index, 1);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                renderCart();
+            });
             
-            subBox.textContent   = `€${subtotal.toFixed(2)}`;
-            discBox.textContent  = `‑€${discount.toFixed(2)}`;
-            delivBox.textContent = `€${delivery.toFixed(2)}`;
-            totalBox.textContent = `€${total.toFixed(2)}`;
+            promoBtn.addEventListener('click', () => {
+                const code = promoInput.value.trim().toUpperCase();
+                
+                if (code === 'BLOOM15') {
+                    promo = { code, rate:0.15 };
+                    promoInput.classList.add('is-valid');
+                    promoInput.classList.remove('is-invalid');
+                    promoError.style.display = 'none';
+                }
+                
+                else if (code === '') {
+                    promo = { code:'', rate:0 };
+                    promoInput.classList.remove('is-valid', 'is-invalid');
+                    promoError.style.display = 'none';
+                }
+                
+                else {
+                    promoInput.classList.add('is-invalid');
+                    promoError.style.display = 'block';
+                    return;                         
+                }
+                
+                renderCart();                     
+            });
             
-            checkoutBtn.classList.toggle('disabled', cart.length === 0);
-            
-            const rowDiscount = document.getElementById('rowDiscount');
-            rowDiscount.classList.toggle('d-none', promo.rate === 0);
-            
-            promoError.style.display = 'none';
-            checkoutBtn.disabled = cart.length === 0;
-            
-        }
-        
-        
-        
-        renderCart();
-        
-        listBox.addEventListener('change', e => {
-            if (!e.target.classList.contains('qty')) return;
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart[e.target.dataset.index].quantity =
-            Math.max(1, parseInt(e.target.value,10)||1);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            renderCart();
+            window.addEventListener('storage', e => {
+                if (e.key === 'cart') renderCart();
+            });
         });
-        
-        listBox.addEventListener('click', e => {
-            if (!e.target.classList.contains('remove')) return;
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.splice(e.target.dataset.index, 1);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            renderCart();
-        });
-        
-        promoBtn.addEventListener('click', () => {
-            const code = promoInput.value.trim().toUpperCase();
-            
-            if (code === 'BLOOM15') {
-                promo = { code, rate:0.15 };
-                promoInput.classList.add('is-valid');
-                promoInput.classList.remove('is-invalid');
-                promoError.style.display = 'none';
-            }
-            
-            else if (code === '') {
-                promo = { code:'', rate:0 };
-                promoInput.classList.remove('is-valid', 'is-invalid');
-                promoError.style.display = 'none';
-            }
-            
-            else {
-                promoInput.classList.add('is-invalid');
-                promoError.style.display = 'block';
-                return;                         
-            }
-            
-            renderCart();                     
-        });
-        
-        window.addEventListener('storage', e => {
-            if (e.key === 'cart') renderCart();
-        });
-    });
-</script>
+    </script>
 
 
 </body>

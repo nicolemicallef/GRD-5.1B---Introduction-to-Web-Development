@@ -25,160 +25,161 @@
             aria-label="Toggle navigation"
             >
             <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <a class="navbar-brand mx-lg-auto order-lg-auto mx-auto" href="/index.html">
-            <img
-            src="Images/mumenti-sbieh-maroon-logo.png"      
-            width="140"
-            height="140"
-            alt="Mumenti Sbieh logo"
-            class="shopbrandLogo"
-            id="shopbrandLogo"
-            data-logo-large="Images/mumenti-sbieh-maroon-logo.png"
-            data-logo-small="Images/maroon-logomark.png" 
-            >
-        </a>
-        
-        <div class="collapse navbar-collapse text-center" id="shopNavCollapse">
-            <ul class="navbar-nav ms-auto gap-lg-4 text-center flex-lg-row flex-column">
-                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/shop.html">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="/eventboard.html">Event Board</a></li>
-                <li class="nav-item"><a class="nav-link" href="/aboutus.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="/userlogin.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="/cart.html"><i class="bi bi-cart-fill"></i></a></li>
-            </ul>
-        </div>
-        
-        
-    </div>
-</nav>
-
-<!-- END NAVBAR-->
-
-<main class="container-xxl py-5 flex-grow-1 faq-main">
-    
-    <h1>Frequently Asked Questions</h1>
-    
-    <div class="accordion" id="faqAccordion">
-        
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="q1">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
-                    How far in advance should I book?
-                </button>
-            </h2>
-            <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    We recommend booking rentals and fresh-flower orders 4–6 weeks ahead.  
-                    Peak wedding season (May–September) fills quickly, so earlier is always better.
-                </div>
-            </div>
-        </div>
-        
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="q2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
-                    Do you offer delivery and set-up?
-                </button>
-            </h2>
-            <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Yes. We deliver across Malta &amp; Gozo and provide on-site installation for décor items.
-                    A flat €20 fee applies; orders over €75 are delivered free of charge.
-                </div>
-            </div>
-        </div>
-        
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="q3">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
-                    Can I customise flower colours or rental packages?
-                </button>
-            </h2>
-            <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    Absolutely! Use our <em>Interactive Event Board</em> or leave a note at checkout.
-                    A designer will confirm availability and colour palette within 24&nbsp;hours.
-                </div>
-            </div>
-        </div>
-        
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="q4">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
-                    What happens if an item is damaged during my event?
-                </button>
-            </h2>
-            <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                    A refundable security deposit covers minor wear.  
-                    Significant damage or loss will be assessed at replacement cost; we’ll email an invoice within three working days.
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</main>
-
-
-<!-- FOOTER -->
-<footer>
-    <div class="container-lg">
-        <a href="/faq.html">FAQ</a>
-        <a href="/terms.html">TERMS & CONDITIONS</a>
-        <a href="/privacy.html">PRIVACY POLICY</a>
-        <a href="/contact.html">SUPPORT</a>
-    </div>
-</footer>
-
-<!-- END FOOTER-->
-
-<!-- JAVASCRIPT -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- NAVBAR SCROLL -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const nav      = document.getElementById('shopNav');
-        const logo     = document.getElementById('shopbrandLogo');
-        const bigSrc   = logo.dataset.logoLarge;
-        const smallSrc = logo.dataset.logoSmall;
-        const shrinkOn = 5;                          
-        
-        function handleScroll() {
+            </button>
             
-            if (window.scrollY === 0) {
-                nav.classList.add('navbar--top');        
-            } else {
-                nav.classList.remove('navbar--top');   
+            <a class="navbar-brand mx-lg-auto order-lg-auto mx-auto" href="/index.html">
+                <img
+                src="Images/mumenti-sbieh-maroon-logo.png"      
+                width="140"
+                height="140"
+                alt="Mumenti Sbieh logo"
+                class="shopbrandLogo"
+                id="shopbrandLogo"
+                data-logo-large="Images/mumenti-sbieh-maroon-logo.png"
+                data-logo-small="Images/maroon-logomark.png" 
+                >
+            </a>
+            
+            <div class="collapse navbar-collapse text-center" id="shopNavCollapse">
+                <ul class="navbar-nav ms-auto gap-lg-4 text-center flex-lg-row flex-column">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/eventboard.html">Event Board</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/userlogin.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cart.html"><i class="bi bi-cart-fill"></i></a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </nav>
+
+    <!-- END NAVBAR-->
+
+    <main class="container-xxl py-5 flex-grow-1 faq-main">
+        
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="accordion" id="faqAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="q1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+                        How far in advance should I book?
+                    </button>
+                </h2>
+                <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We recommend booking rentals and fresh-flower orders 4–6 weeks ahead.  
+                        Peak wedding season (May–September) fills quickly, so earlier is always better.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="q2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+                        Do you offer delivery and set-up?
+                    </button>
+                </h2>
+                <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes. We deliver across Malta &amp; Gozo and provide on-site installation for décor items.
+                        A flat €20 fee applies; orders over €75 are delivered free of charge.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="q3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+                        Can I customise flower colours or rental packages?
+                    </button>
+                </h2>
+                <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Absolutely! Use our <em>Interactive Event Board</em> or leave a note at checkout.
+                        A designer will confirm availability and colour palette within 24&nbsp;hours.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="q4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+                        What happens if an item is damaged during my event?
+                    </button>
+                </h2>
+                <div id="a4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A refundable security deposit covers minor wear.  
+                        Significant damage or loss will be assessed at replacement cost; we’ll email an invoice within three working days.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-lg">
+            <a href="/faq.html">FAQ</a>
+            <a href="/terms.html">TERMS & CONDITIONS</a>
+            <a href="/privacy.html">PRIVACY POLICY</a>
+            <a href="/contact.html">SUPPORT</a>
+        </div>
+    </footer>
+
+    <!-- END FOOTER-->
+
+    <!-- JAVASCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- NAVBAR SCROLL -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const nav      = document.getElementById('shopNav');
+            const logo     = document.getElementById('shopbrandLogo');
+            const bigSrc   = logo.dataset.logoLarge;
+            const smallSrc = logo.dataset.logoSmall;
+            const shrinkOn = 5;                          
+            
+            function handleScroll() {
+                
+                if (window.scrollY === 0) {
+                    nav.classList.add('navbar--top');        
+                } else {
+                    nav.classList.remove('navbar--top');   
+                }
+                
+                if (window.scrollY >= shrinkOn) {
+                    nav.classList.add('navbar--shrink');
+                    if (logo.getAttribute('src') !== smallSrc) {
+                        logo.setAttribute('src', smallSrc);
+                    }
+                } else {
+                    nav.classList.remove('navbar--shrink');
+                    if (logo.getAttribute('src') !== bigSrc) {
+                        logo.setAttribute('src', bigSrc);
+                    }
+                }
             }
             
-            if (window.scrollY >= shrinkOn) {
-                nav.classList.add('navbar--shrink');
-                if (logo.getAttribute('src') !== smallSrc) {
-                    logo.setAttribute('src', smallSrc);
-                }
-            } else {
-                nav.classList.remove('navbar--shrink');
-                if (logo.getAttribute('src') !== bigSrc) {
-                    logo.setAttribute('src', bigSrc);
-                }
-            }
-        }
+            handleScroll();              
+            window.addEventListener('scroll', handleScroll);
+        });
         
-        handleScroll();              
-        window.addEventListener('scroll', handleScroll);
-    });
-    
-    
-</script>
+        
+    </script>
 
-<!-- END NAVBAR SCROLL -->
+    <!-- END NAVBAR SCROLL -->
+    
 </body>
 </html>
